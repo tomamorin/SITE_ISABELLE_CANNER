@@ -60,6 +60,16 @@ a:visited, a:hover, a:focus, a:active {
     transition: width .5s;
 }
 
+.navbar .navbar-nav li#menu-item-38 a::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin:auto;
+    height: 2px;
+    background: #F1B910;
+    transition: width .5s;
+}
+
 .navbar .navbar-nav li.active a::after {
     width: 100%;
 }
@@ -185,16 +195,13 @@ h4 {
 }
 
 .presentation-service {
-    display: block;
     text-align: center;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .presentation-service-bloc {
-    display: inline-block;
-    margin-left: 6%;
-    margin-right: 6%;
-    width: 28%;
+    width: 70%;
+    margin: auto;
 }
 
 .presentation-service-img {
@@ -243,7 +250,9 @@ p.paragraphe {
 .presentation-therapeute img {
     max-width: 100%;
     height: auto;
+    border-radius: 6px;
 }
+
 /*SACHA*/
 /*SLIDER*/
 .caroussel{
