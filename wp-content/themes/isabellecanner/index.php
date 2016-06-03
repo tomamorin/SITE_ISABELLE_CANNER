@@ -9,19 +9,16 @@
 <div id="accueil-background">
     <div class="titre-background">
         <h1>Isabelle Canner</h1>
-        <h2>Enneagramme - Coaching Orientation Professionnelle</h2>
+        <h2>Accompagnement Personnel</h2>
         <h2>NANTES</h2>
     </div>
 </div>
 <div class="presentation-intro">
     <?php
-
     $id = 26;
     $bouton = get_post($id);
     $title = $bouton->post_title;
     $contenu = $bouton->post_content;
-    $contenu = apply_filters('the_content', $contenu);
-    $contenu = str_replace(']]>', ']]&gt;', $contenu);
     ?>
     <?php echo "<h3>$title</h3>"; ?>
     <?php echo"<p>$contenu</p>"; ?>
@@ -33,31 +30,19 @@
     $bouton = get_post($id);
     $title = $bouton->post_title;
     $contenu = $bouton->post_content;
-    $contenu = apply_filters('the_content', $contenu);
-    $contenu = str_replace(']]>', ']]&gt;', $contenu);
     ?>
     <?php echo "<h3>$title</h3>"; ?>
     <?php echo"<p>$contenu</p>"; ?>
 </div>
 <div class="presentation-service">
     <?php
-
     $id = 27;
     $bouton = get_post($id);
     $title = $bouton->post_title;
     $contenu = $bouton->post_content;
-    $contenu = apply_filters('the_content', $contenu);
-    $contenu = str_replace(']]>', ']]&gt;', $contenu);
     ?>
     <?php echo "<h3>$title</h3>"; ?>
-    <?php echo"<p>$contenu</p>"; ?>
-    <p style="text-align: center;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
-    </p>
+    <?php echo"<p class='paragraphe'>$contenu</p>"; ?>
     <div class="presentation-service-bloc">
         <a href="enneagramme">
             <div class="presentation-service-img">
