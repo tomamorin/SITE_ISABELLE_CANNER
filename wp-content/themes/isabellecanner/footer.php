@@ -10,18 +10,18 @@
         $(document).ready(function(){
             var state = 0;
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 100) {
+                if ($(this).scrollTop() > 200) {
                     if (state == 0){
-                        $('#menu-item-56').css("display","inline-block").fadeIn(2000);
-                        $('#menu-item-56').css("margin","0 1%").fadeIn(2000);
-                        $('.transparent').css("background-color", 'black');
+                        $('#menu-item-38').css("display","inline-block").fadeIn(2000);
+                        $('#menu-item-38').css("margin","0 1%").fadeIn(2000);
+                        $('.transparent').css("background-color", 'rgba(255,255,255, 0.9)');
                         console.log("animate");
                         state = 1;
                     }
                 } else {
                     if (state == 1){
-                        $('#menu-item-56').css("display","none").fadeOut(2000);
-                        $('#menu-item-56').css("margin","0 0%").fadeOut(2000);
+                        $('#menu-item-38').css("display","none").fadeOut(2000);
+                        $('#menu-item-38').css("margin","0 0%").fadeOut(2000);
                         $('.transparent').css('background-color', 'inherit').fadeIn(1000);
                         console.log("transparent");
                         state = 0;

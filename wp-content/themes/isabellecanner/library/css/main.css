@@ -19,6 +19,9 @@ a:visited, a:hover, a:focus, a:active {
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .navbar .navbar-collapse {
@@ -30,13 +33,30 @@ a:visited, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: none;
+        display: inline-block;
+        height: 50px;
+    }
+}
+
+#menu-item-38 {
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    display:  none;
+}
+
 .navbar .navbar-nav li a::after {
     content: '';
     display: block;
     width: 0;
     margin:auto;
     height: 2px;
-    background: blue;
+    background: #F1B910;
     transition: width .5s;
 }
 
@@ -48,6 +68,11 @@ a:visited, a:hover, a:focus, a:active {
     width: 100%;
     /*transition: width .3s;*/
 }
+
+.navbar .navbar-nav li a {
+    color: #2B2B2B !important;
+}
+
 
 .transparent {
     background-color: transparent;
@@ -82,16 +107,18 @@ a:visited, a:hover, a:focus, a:active {
 h3 {
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    font-size: 46px;
+    color: #2B2B2B;
 }
 
 h3::after {
     content: '';
     display: block;
     width: 80px;
-    margin:auto;
-    height: 2px;
-    background: blue;
+    margin: auto;
+    height: 6px;
+    background: #F1B910;
     margin-top: 10px;
 }
 
@@ -208,6 +235,59 @@ p.paragraphe {
     width: 70%;
     margin: auto;
 }
+
+.presentation-therapeute {
+    padding-bottom: 100px;
+}
+
+.presentation-therapeute img {
+    max-width: 100%;
+    height: auto;
+}
+/*SACHA*/
+/*SLIDER*/
+.caroussel{
+    height: 80vh;
+    padding: 0px;
+
+}
+.carousel-inner img{
+    max-height:80vh;
+    width: 100%;
+
+}
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control.right {
+    background-image: none;
+}
+.glyphicon-menu-left {
+    background: url("../img/pattern.png");
+    margin-top: 250px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: #F1B910;
+    right: 42%;
+}
+.glyphicon-menu-right {
+    background: url("../img/pattern.png");
+    margin-top: 250px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: #F1B910;
+    left: 42%;
+}
+.glyphicon-menu-right:hover{
+    opacity: 1;
+}
+.glyphicon-menu-left:hover{
+    opacity: 1;
+}
+.navbar-collapse{
+    padding: 0px;
+}
+
 /* FIN ACCUEIL */
 
 
