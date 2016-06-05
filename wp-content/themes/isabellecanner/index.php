@@ -5,28 +5,28 @@
 ?>
 
 <?php get_header(); ?>
-<!--CAROUSSEL-->
-<div class="container-fluid caroussel">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="<?php bloginfo('template_directory')?>/library/img/301h.jpg" alt="Château Laborde">
-                <div class="carousel-caption">
-
-                </div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="overlay text-center">
+        <h1>Isabelle Caner</h1>
+        <br>
+        <h2>Accompagnement Personnel</h2>
+        <h2>- NANTES -</h2>
+    </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="<?php bloginfo('template_directory') ?>/library/img/caroussel-1-compressor.jpeg" alt="..." class="height-img">
+            <div class="carousel-caption">
             </div>
-            <div class="item">
-                <img src="<?php bloginfo('template_directory')?>/library/img/301h.jpg" alt="Château Laborde">
-                <div class="carousel-caption">
-
-                </div>
+        </div>
+        <div class="item">
+            <img src="<?php bloginfo('template_directory') ?>/library/img/caroussel-1-compressor.jpeg" alt="..." class="height-img">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="<?php bloginfo('template_directory') ?>/library/img/caroussel-1-compressor.jpeg" alt="..." class="height-img">
+            <div class="carousel-caption">
             </div>
         </div>
     </div>
@@ -48,7 +48,14 @@
                     </div>
                 <?php endwhile; ?>
             </div>
-
+        </div>
+    </div>
+</div>
+<div class="container-fluid no-padding">
+    <div class="background-transition">
+        <div class="background-rgba">
+            <div class="citation">" Se connaître soi-même n'appartient qu'à l'homme sage. "</div>
+            <div class="auteur">Platon</div>
         </div>
     </div>
 </div>
@@ -63,38 +70,30 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="presentation-service-bloc">
-                            <a href="enneagramme">
-                                <div class="presentation-service-img">
-                                    <i class="fa fa-star fa-4x" aria-hidden="true"></i>
-                                    <h5>Enneagramme</h5>
-                                </div>
-                            </a>
-                            <p class="presentation-service-texte">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate
-                            </p>
-                        </div>
+                        <?php $my_query = new WP_Query(array('post_type' => 'accueil', 'post__in' => array('42'))); ?>
+                        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                            <div class="presentation-service-bloc">
+                                    <div class="presentation-service-img">
+                                        <img src="<?php bloginfo('template_directory')?>/library/img/icon.png" alt="enneagramme" class="icone-service">
+                                        <h5><?php the_title(); ?></h5>
+                                    </div>
+                                <div class="presentation-service-texte"><?php the_content(); ?></div>
+                                <a href="enneagramme"><div class="btn-service">En savoir plus</div></a>
+                            </div>
+                        <?php endwhile; ?>
                     </div>
                     <div class="col-md-6">
-                        <div class="presentation-service-bloc">
-                            <a href="coaching">
-                                <div class="presentation-service-img">
-                                    <i class="fa fa-star fa-4x" aria-hidden="true"></i>
-                                    <h5>Coaching</h5>
-                                </div>
-                            </a>
-                            <p class="presentation-service-texte">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate
-                            </p>
-                        </div>
+                        <?php $my_query = new WP_Query(array('post_type' => 'accueil', 'post__in' => array('44'))); ?>
+                        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                            <div class="presentation-service-bloc">
+                                    <div class="presentation-service-img">
+                                        <img src="<?php bloginfo('template_directory')?>/library/img/circle-between-hands.png" alt="coaching" class="icone-service">
+                                        <h5><?php the_title(); ?></h5>
+                                    </div>
+                                <div class="presentation-service-texte"><?php the_content(); ?></div>
+                                <a href="coaching"><div class="btn-service">En savoir plus</div></a>
+                            </div>
+                        <?php endwhile; ?>
                     </div>
                 </div>
             </div>
