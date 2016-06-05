@@ -41,5 +41,16 @@ function my_custom_init() {
             'has_archive' => true
         )
     );
+    register_post_type('Contact',
+        array(
+            'labels' => array(
+                'name' => 'Contact',
+                'singular_name' => 'Contact'
+            ),
+            'public' => true,
+            'supports' => array('editor', 'title')
+        )
+    );
 }
+
 /* ADD YOUR CUSTOM FUNCTIONS BELOW */
