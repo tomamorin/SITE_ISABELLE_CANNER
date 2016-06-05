@@ -269,6 +269,9 @@ p.paragraphe {
     height: 40vh;
 }
 /*CARTE*/
+html body{
+    font-family: 'Oswald', sans-serif;
+}
 /*CONTACT*/
 .dcontact{
     margin-top: 3em;
