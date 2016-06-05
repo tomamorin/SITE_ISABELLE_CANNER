@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
     <div class="overlay text-center">
         <h1>Isabelle Caner</h1>
         <br>
@@ -15,17 +15,17 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="<?php bloginfo('template_directory') ?>/library/img/caroussel-1-compressor.jpeg" alt="..." class="height-img">
+            <img src="<?php bloginfo('template_directory') ?>/library/img/158H-compressor.jpg" alt="..." class="height-img">
             <div class="carousel-caption">
             </div>
         </div>
         <div class="item">
-            <img src="<?php bloginfo('template_directory') ?>/library/img/caroussel-1-compressor.jpeg" alt="..." class="height-img">
+            <img src="<?php bloginfo('template_directory') ?>/library/img/60H-compressor.jpg" alt="..." class="height-img">
             <div class="carousel-caption">
             </div>
         </div>
         <div class="item">
-            <img src="<?php bloginfo('template_directory') ?>/library/img/caroussel-1-compressor.jpeg" alt="..." class="height-img">
+            <img src="<?php bloginfo('template_directory') ?>/library/img/215H-compressor.jpg" alt="..." class="height-img">
             <div class="carousel-caption">
             </div>
         </div>
@@ -65,7 +65,7 @@
             <div class="presentation-service">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>SERVICES</h3>
+                        <h3>VOTRE FORMATION</h3>
                     </div>
                 </div>
                 <div class="row">

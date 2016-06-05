@@ -26,14 +26,17 @@
             </div>
             <div class="col-md-5 informations">
                 <h2 class="subtitle">Informations et Rendez-vous</h2>
-                <p>Adresse : 46 avenue du Docteur HECKEL
-                    <br>13011 MARSEILLE
+                <p>Adresse : 4 rue Allaire
+                    <br>44400 REZE
                 </p>
+                <p>Téléphone : 06 03 49 08 61</p>
+                <p>Mail : isabelle.chabran@wanadoo.fr </p>
 
-                <p>Téléphone : 07 82 25 32 10</p>
-                <hr>
-                <p>Les Rendez-vous se font du lundi au samedi.
-                    L’entretien préalable est gratuit</p>
+                <p>Prix :</p>
+                <p>•	240 euros par module de 2  jours pour les particuliers
+                    <br>•	300  euros  Consultants/ Professions libérales
+                    <br>•	600  euros  si prise en charge formation par l’entreprise
+                </p>
             </div>
         </div>
         </div>
