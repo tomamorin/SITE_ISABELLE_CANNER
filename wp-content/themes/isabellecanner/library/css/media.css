@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .overlay {
+        width: 100% !important;
+        margin-left: 0% !important;
+        top: 0% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .overlay {
+        width: 90%;
+        margin-left: 5%;
+        top: 26%
+    }
+}

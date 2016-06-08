@@ -8,10 +8,13 @@
 <div class="container-fluid no-padding">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
         <div class="overlay text-center">
-            <h1 class="caption-title"><span>Isabelle Chabran<!--<img src="<?php bloginfo('template_directory') ?>/library/img/logowhite.png" alt="..." class="img-responsive">--></span></h1>
-            <br>
-            <h2 style="color: white">Accompagnement Personnel</h2>
-            <h2><span style="color: rgba(43, 43, 43, 0.9)">-</span> NANTES <span style="color: rgba(43, 43, 43, 0.9)">-</span></h2>
+            <div class="vcenter">
+                <h1 class="caption-title"><span>Isabelle Chabran<!--<img src="<?php bloginfo('template_directory') ?>/library/img/logowhite.png" alt="..." class="img-responsive">--></span></h1>
+                <br>
+                <h2 style="color: white">Accompagnement Personnel</h2>
+                <h2><span style="color: rgba(43, 43, 43, 0.9)">-</span> NANTES <span style="color: rgba(43, 43, 43, 0.9)">-</span></h2>
+            </div>
+
         </div>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
