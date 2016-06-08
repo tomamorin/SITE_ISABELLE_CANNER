@@ -5,28 +5,30 @@
 ?>
 
 <?php get_header(); ?>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
-    <div class="overlay text-center">
-        <h1>Isabelle Caner</h1>
-        <br>
-        <h2>Accompagnement Personnel</h2>
-        <h2>- NANTES -</h2>
-    </div>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="<?php bloginfo('template_directory') ?>/library/img/158H-compressor.jpg" alt="..." class="height-img">
-            <div class="carousel-caption">
-            </div>
+<div class="container-fluid no-padding">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
+        <div class="overlay text-center">
+            <h1 class="caption-title"><span>Isabelle Chabran<!--<img src="<?php bloginfo('template_directory') ?>/library/img/logowhite.png" alt="..." class="img-responsive">--></span></h1>
+            <br>
+            <h2 style="color: white">Accompagnement Personnel</h2>
+            <h2><span style="color: rgba(43, 43, 43, 0.9)">-</span> NANTES <span style="color: rgba(43, 43, 43, 0.9)">-</span></h2>
         </div>
-        <div class="item">
-            <img src="<?php bloginfo('template_directory') ?>/library/img/60H-compressor.jpg" alt="..." class="height-img">
-            <div class="carousel-caption">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/158H-compressor.jpg" alt="..." class="height-img">
+                <div class="carousel-caption">
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <img src="<?php bloginfo('template_directory') ?>/library/img/215H-compressor.jpg" alt="..." class="height-img">
-            <div class="carousel-caption">
+            <div class="item">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/60H-compressor.jpg" alt="..." class="height-img">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/215H-compressor.jpg" alt="..." class="height-img">
+                <div class="carousel-caption">
+                </div>
             </div>
         </div>
     </div>
@@ -43,8 +45,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4"><?php the_post_thumbnail('',array('class'=>'img-responsive')); ?></div>
-                        <div class="col-md-8"><?php the_content(); ?></div>
+                        <div class="col-md-5"><?php the_post_thumbnail('',array('class'=>'img-responsive')); ?></div>
+                        <div class="col-md-7 contenu"><?php the_content(); ?></div>
                     </div>
                 <?php endwhile; ?>
             </div>
