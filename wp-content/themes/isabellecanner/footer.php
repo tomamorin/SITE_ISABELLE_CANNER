@@ -18,7 +18,7 @@
         $(document).ready(function(){
             var state = 0;
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 200) {
+                if ($(this).scrollTop() > 100) {
                     if (state == 0){
                         $('#menu-item-38').css("display","inline-block").fadeIn(2000);
                         $('#menu-item-38').css("margin","0 1%").fadeIn(2000);
