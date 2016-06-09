@@ -13,6 +13,11 @@
                 <br>
                 <h2 style="color: #2b2b2b">Accompagnement Personnel</h2>
                 <h2><span style="color: rgba(43, 43, 43, 0.9)">-</span> NANTES <span style="color: rgba(43, 43, 43, 0.9)">-</span></h2>
+                <div class="arrow">
+                    <a class="js-scrollTo" href="#therapeute">
+                    <img src="<?php bloginfo('template_directory') ?>/library/img/down-arrow.png" alt="..." class="img-responsive arrow">
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -35,6 +40,8 @@
             </div>
         </div>
     </div>
+</div>
+<div id="therapeute">
 </div>
 <div class="container">
     <div class="row">

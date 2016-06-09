@@ -716,3 +716,15 @@ footer {
 .description-coaching {
     margin-bottom: 80px;
 }
+
+.arrow {
+    margin: auto;
+    width: 50px;
+    color: red;
+    margin-top: 15px;
+    border-bottom: 1px solid #F1B910;
+}
+
+#therapeute {
+    height: 30px;
+}
