@@ -689,3 +689,31 @@ footer {
 .margin-b {
     margin-bottom: 80px;
 }
+
+.background-coach {
+    height: 400px;
+    background-image: url("../img/background-coach-compressor%20(1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+}
+
+h4.coach {
+    text-align: left;
+    font-size: 35px;
+    padding-top: 10%;
+    padding-left: 8%;
+    color: #2b2b2b;
+}
+
+@media screen and (max-width: 768px) {
+    h4.coach {
+        text-align: center;
+        padding-top: 20%;
+        padding-left: 0%;
+    }
+}
+
+.description-coaching {
+    margin-bottom: 80px;
+}

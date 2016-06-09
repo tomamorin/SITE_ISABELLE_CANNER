@@ -67,6 +67,22 @@ function my_custom_init() {
             'has_archive' => true
         )
     );
+    register_post_type('coaching',
+        array(
+            'labels' => array(
+                'name' => 'Page Coaching',
+                'singular_name' => 'Page Coaching'
+            ),
+            'public' => true,
+            'capability_type' => 'post',
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail'
+            ),
+            'has_archive' => true
+        )
+    );
 }
 
 /* ADD YOUR CUSTOM FUNCTIONS BELOW */
