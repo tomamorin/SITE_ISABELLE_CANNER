@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="background-coach">
-                <h4 class="coach">Le Coaching <br>pour faire le bon choix professionnel</h4>
+                <h4 class="vcentertitle">Le Coaching <br>pour faire le bon choix professionnel</h4>
             </div>
         </div>
     </div>

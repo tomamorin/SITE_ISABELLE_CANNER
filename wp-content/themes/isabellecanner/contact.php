@@ -7,12 +7,8 @@
 <?php get_header(); ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <img src="" alt="">
-            </div>
-            <div class="clearfix"></div>
             <div class="col-md-12 no-padding"  >
-                <div id="map-canvas" class="img" ></div>
+                <div id="map-canvas"></div>
             </div>
         </div>
     </div>
@@ -26,17 +22,25 @@
             </div>
             <div class="col-md-5 informations">
                 <h2 class="subtitle">Informations et Rendez-vous</h2>
-                <p>Adresse : 4 rue Allaire
-                    <br>44400 REZE
-                </p>
+                <div>
+                    <?php $my_query = new WP_Query(array('post_type' => 'Page Contact', 'post__in' => array('70'))); ?>
+                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                        <p><?php the_content(); ?></p>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                </div>
                 <p>Téléphone : 06 03 49 08 61</p>
-                <p>Mail : isabelle.chabran@wanadoo.fr </p>
 
                 <p>Prix :</p>
-                <p>•	240 euros par module de 2  jours pour les particuliers
-                    <br>•	300  euros  Consultants/ Professions libérales
-                    <br>•	600  euros  si prise en charge formation par l’entreprise
-                </p>
+                <div>
+                    <?php $my_query = new WP_Query(array('post_type' => 'Page Contact', 'post__in' => array('69'))); ?>
+                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                </div>
+
+
             </div>
         </div>
         </div>

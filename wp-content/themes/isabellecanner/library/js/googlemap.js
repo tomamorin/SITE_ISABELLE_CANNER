@@ -13,16 +13,27 @@ function initMap() {
 
 
     //MARQUEUR
-    var hotel = new google.maps.MarkerImage('img/marker.png');
-    var marker1 = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         position: new google.maps.LatLng(47.196414, -1.553519),
-
         map: map,
         title: 'Maquis Art '
     });
 
 
     //INFOBULLES
+    var contentString = '<div id="content">'+
+        '<div id="bodyContent">'+
+        '<p>4 rue Allaire - 44400 REZE</p>'+
+
+        '</div>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
 
 }
 

@@ -19,17 +19,17 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="<?php bloginfo('template_directory') ?>/library/img/background-5-compressor.jpeg" alt="..." class="height-img">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/background-5-compressor.jpeg" alt="..." class="img-responsive height-img">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="<?php bloginfo('template_directory') ?>/library/img/background-8-min.jpeg" alt="..." class="height-img">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/background-8-min.jpeg" alt="..." class="img-responsive height-img">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="<?php bloginfo('template_directory') ?>/library/img/background-6-min.jpeg" alt="..." class="height-img">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/background-6-min.jpeg" alt="..." class="img-responsive height-img">
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5"><?php the_post_thumbnail('',array('class'=>'img-responsive')); ?></div>
+                        <div class="col-md-5"><?php the_post_thumbnail('',array('class'=>'img-responsive center-block')); ?></div>
                         <div class="col-md-7 contenu"><?php the_content(); ?></div>
                     </div>
                 <?php endwhile; ?>
@@ -83,7 +83,7 @@
                                         <h5><?php the_title(); ?></h5>
                                     </div>
                                 <div class="presentation-service-texte"><?php the_content(); ?></div>
-                                <a href="enneagramme"><div class="btn-service">En savoir plus</div></a>
+                                <a href="enneagramme"><div class="btn btn-contact">En savoir plus</div></a>
                             </div>
                         <?php endwhile; ?>
                     </div>
@@ -96,7 +96,7 @@
                                         <h5><?php the_title(); ?></h5>
                                     </div>
                                 <div class="presentation-service-texte"><?php the_content(); ?></div>
-                                <a href="coaching"><div class="btn-service">En savoir plus</div></a>
+                                <a href="coaching"><div class="btn btn-contact">En savoir plus</div></a>
                             </div>
                         <?php endwhile; ?>
                     </div>

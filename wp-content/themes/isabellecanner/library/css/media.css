@@ -4,6 +4,14 @@
         margin-left: 0% !important;
         top: 0% !important;
     }
+    .vcenter {
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0) scale(1.0, 1.0);
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -12,4 +20,33 @@
         margin-left: 5%;
         top: 26%
     }
+}
+/* Extra small devices (portrait phones, less than 34em)*/
+@media (max-width: 33.9em) {
+    .transparent{
+        background-color: white;
+    }
+    #menu-item-38 {
+
+        display:  block;
+    }
+}
+
+/* Small devices (landscape phones, less than 48em)*/
+@media (max-width: 48em) {
+.transparent{
+    background-color: white;
+}
+}
+@media screen and (max-width: 767px) {
+
+}
+/* Medium devices (tablets, less than 62em)*/
+@media (max-width: 62em) {
+
+}
+
+/* Large devices (desktops, less than 75em)*/
+@media (max-width: 74.9em) {
+
 }
