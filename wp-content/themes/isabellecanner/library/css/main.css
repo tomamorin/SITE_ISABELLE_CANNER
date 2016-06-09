@@ -491,7 +491,7 @@ h1 {
 }
 
 .height-img {
-    max-height: 100vh;
+    max-height: 98vh;
     width: 100%;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -696,7 +696,6 @@ footer {
     color: #F1B910;
     text-align: left;
     padding-top: 17px;
-    border-top: 1px solid white;
     padding-left: 20px;
 }
 
@@ -718,13 +717,17 @@ footer {
 }
 
 .arrow {
-    margin: auto;
-    width: 50px;
-    color: red;
-    margin-top: 15px;
-    border-bottom: 1px solid #F1B910;
+    position: absolute;
+    z-index: 99;
+    /* top: 0px; */
+    bottom: 0px;
+
 }
 
 #therapeute {
     height: 30px;
 }
+.fleche {
+
+    width: 50px;
+ }

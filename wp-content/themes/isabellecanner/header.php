@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/css/main.css"/>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/css/media.css"/>
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
 
