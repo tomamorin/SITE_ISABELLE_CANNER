@@ -11,7 +11,7 @@
             <div class="vcenter">
                 <h1 class="caption-title"><span>Isabelle Chabran<!--<img src="<?php bloginfo('template_directory') ?>/library/img/logowhite.png" alt="..." class="img-responsive">--></span></h1>
                 <br>
-                <h2 style="color: white">Accompagnement Personnel</h2>
+                <h2 style="color: #2b2b2b">Accompagnement Personnel</h2>
                 <h2><span style="color: rgba(43, 43, 43, 0.9)">-</span> NANTES <span style="color: rgba(43, 43, 43, 0.9)">-</span></h2>
             </div>
 
@@ -19,17 +19,17 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="<?php bloginfo('template_directory') ?>/library/img/158H-compressor.jpg" alt="..." class="height-img">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/background-5-compressor.jpeg" alt="..." class="height-img">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="<?php bloginfo('template_directory') ?>/library/img/60H-compressor.jpg" alt="..." class="height-img">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/background-8-min.jpeg" alt="..." class="height-img">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="<?php bloginfo('template_directory') ?>/library/img/215H-compressor.jpg" alt="..." class="height-img">
+                <img src="<?php bloginfo('template_directory') ?>/library/img/background-6-min.jpeg" alt="..." class="height-img">
                 <div class="carousel-caption">
                 </div>
             </div>
