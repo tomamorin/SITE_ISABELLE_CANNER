@@ -41,14 +41,30 @@ function my_custom_init() {
             'has_archive' => true
         )
     );
-    register_post_type('Contact',
+    register_post_type('Page Contact',
         array(
             'labels' => array(
-                'name' => 'Contact',
-                'singular_name' => 'Contact'
+                'name' => 'Page Contact',
+                'singular_name' => 'Page Contact'
             ),
             'public' => true,
             'supports' => array('editor', 'title')
+        )
+    );
+    register_post_type('enneagramme',
+        array(
+            'labels' => array(
+                'name' => 'Page Enneagramme',
+                'singular_name' => 'Page Enneagramme'
+            ),
+            'public' => true,
+            'capability_type' => 'post',
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail'
+            ),
+            'has_archive' => true
         )
     );
 }
