@@ -1,5 +1,5 @@
 <footer>
-
+    <div class="mentions">Copyright © 2016. Site crée par Thomas MORIN & Sacha BOBINET & Thomas LUPU.</div>
 </footer>
 </body>
 
