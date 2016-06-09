@@ -529,7 +529,7 @@ h1 {
 
 .caption-title span {
     display: block;
-    padding: 3% 10%;
+    padding: 3% 0%;
     position: relative;
 }
 
@@ -719,9 +719,7 @@ footer {
 .arrow {
     position: absolute;
     z-index: 99;
-    /* top: 0px; */
-    bottom: 0px;
-
+    bottom: 15%;
 }
 
 #therapeute {
