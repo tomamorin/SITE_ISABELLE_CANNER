@@ -59,6 +59,12 @@
                         <div class="col-md-7 contenu"><?php the_content(); ?></div>
                     </div>
                 <?php endwhile; ?>
+                <?php $my_query = new WP_Query(array('post_type' => 'accueil', 'post__in' => array('74'))); ?>
+                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                <div class="row">
+                    <div class="col-md-12 contenu"><?php the_content(); ?></div>
+                </div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
