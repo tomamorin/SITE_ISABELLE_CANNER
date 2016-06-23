@@ -1,3 +1,6 @@
+<div class="row">
+    <?php get_template_part('template-inscription'); ?>
+</div>
 <footer>
     <div class="mentions">
         <p class="text-center">Copyright © 2016. Site crée par Thomas MORIN & Sacha BOBINET & Thomas LUPU.</p>
@@ -9,6 +12,8 @@
 
 <script src="<?php bloginfo('template_directory'); ?>/library/js/jquery.min.js" ></script>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/bootstrap.min.js" ></script>
+<script src="<?php bloginfo('template_directory'); ?>/library/js/lity.min.js" ></script>
+
 <!--GOOGLE MAP-->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlAmzR49jqVCtpdBjL4cceQkiyvDHZ-2Q&callback=initMap">

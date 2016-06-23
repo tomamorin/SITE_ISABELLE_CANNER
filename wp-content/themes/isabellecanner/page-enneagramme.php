@@ -57,7 +57,7 @@
             <!--<h2>FORMATION LE 8 ET 9 OCTOBRE 2016</h2>
             <h2>A NANTES OU A ANGERS</h2>-->
         <?php endwhile; ?>
-        <a href="contact"><div class="btn-inscription">INSCRIVEZ-VOUS ICI</div></a>
+        <a href="#inline" data-lity><div class="btn-inscription">INSCRIVEZ-VOUS ICI</div></a>
     </div>
 <div class="container margin-b">
     <div class="row">
