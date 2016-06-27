@@ -30,6 +30,8 @@
             </div>
         </div>
     </div>
+    <div class="transition-coach-img">
+    </div>
     <div class="container description-coaching">
         <div class="row">
             <div class="col-md-12">
@@ -41,11 +43,15 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 contenu-enne"><?php the_content(); ?></div>
+                        <div class="col-md-12 contenu-coach"><?php the_content(); ?></div>
                     </div>
                 <?php endwhile; ?>
             </div>
         </div>
+    </div>
+    <div class="transition-coach-img-deux">
+    </div>
+    <div class="container description-coaching">
         <div class="row">
             <div class="col-md-12">
                 <?php $my_query = new WP_Query(array('post_type' => 'coaching', 'post__in' => array('76'))); ?>
@@ -56,7 +62,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 contenu-enne"><?php the_content(); ?></div>
+                        <div class="col-md-12 contenu-coach"><?php the_content(); ?></div>
                     </div>
                 <?php endwhile; ?>
             </div>

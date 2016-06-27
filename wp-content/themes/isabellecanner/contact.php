@@ -5,15 +5,14 @@
 ?>
 
 <?php get_header(); ?>
-    <div class="container-fluid">
+    <div class="container-fluid no-pd">
         <div class="row">
             <div class="col-md-12 no-padding"  >
                 <div id="map-canvas"></div>
             </div>
         </div>
     </div>
-<div class="clearfix"></div>
-<div class="container no-padding">
+<div class="container">
     <div class="row">
         <div class="col-md-12 dcontact">
             <div class="col-md-7">
@@ -30,7 +29,8 @@
                     <?php wp_reset_postdata(); ?>
                 </div>
                 <p>Téléphone : 06 03 49 08 61</p>
-
+                <p>Mail: isabelle.chabran@wanadoo.fr</p>
+                <br>
                 <p>Prix :</p>
                 <div>
                     <?php $my_query = new WP_Query(array('post_type' => 'Page Contact', 'post__in' => array('69'))); ?>
@@ -39,12 +39,9 @@
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
-
-
             </div>
         </div>
-        </div>
-
+    </div>
 </div>
 
 
