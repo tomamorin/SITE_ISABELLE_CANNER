@@ -1,5 +1,5 @@
 <footer>
-    <div class="mentions">
+    <div class="col-md-12   mentions">
         <p class="text-center">Copyright © 2016. Site crée par Thomas MORIN & Sacha BOBINET & Thomas LUPU.</p>
     </div>
 </footer>
@@ -74,6 +74,7 @@
         });
     });
 </script>
+
 
 <?php wp_footer(); ?>
 

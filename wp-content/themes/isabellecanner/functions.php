@@ -51,11 +51,28 @@ function my_custom_init() {
             'supports' => array('editor', 'title')
         )
     );
+
     register_post_type('enneagramme',
         array(
             'labels' => array(
                 'name' => 'Page Enneagramme',
                 'singular_name' => 'Page Enneagramme'
+            ),
+            'public' => true,
+            'capability_type' => 'post',
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail'
+            ),
+            'has_archive' => true
+        )
+    );
+    register_post_type('inscription',
+        array(
+            'labels' => array(
+                'name' => 'inscription',
+                'singular_name' => 'inscription'
             ),
             'public' => true,
             'capability_type' => 'post',
@@ -84,5 +101,6 @@ function my_custom_init() {
         )
     );
 }
+
 
 /* ADD YOUR CUSTOM FUNCTIONS BELOW */

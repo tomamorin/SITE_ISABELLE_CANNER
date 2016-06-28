@@ -6,6 +6,7 @@
 function initMap() {
     var myLatlng = new google.maps.LatLng(47.196414, -1.553519);
     var mapOptions = {
+        scrollwheel: false,
         zoom: 13,
         center: myLatlng,
         scrollwheel: false
@@ -39,7 +40,6 @@ function initMap() {
 }
 
 
-google.maps.event.addDomListener(window, 'load', initMap);
 
 
 

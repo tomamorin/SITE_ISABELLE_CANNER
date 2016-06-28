@@ -46,17 +46,22 @@
                 <div class="row">
                     <div class="col-md-12 contenu-enne"><?php the_content(); ?></div>
                 </div>
-            <?php endwhile; ?>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
         </div>
     </div>
 </div>
-    <div class="transition-enne">
-        <?php $my_query = new WP_Query(array('post_type' => 'enneagramme', 'post__in' => array('66'))); ?>
-            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                <h2><?php the_title(); ?></h2>
-            <?php endwhile; ?>
-        <a href="contact"><div class="btn-inscription">INSCRIVEZ-VOUS ICI</div></a>
+<div class="container-fluid no-padding">
+    <div class="col-md-12 transition-enne">
+        <?php $my_query = new WP_Query(array('post_type' => 'inscription', 'posts_per_page' => '-1')); ?>
+        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+            <a href="<?php the_permalink()?>"><?php the_title(); ?></a>
+            <?php the_content(); ?>
+            <?php the_field('date')?>
+        <?php endwhile; ?>
     </div>
+</div>
+
 <div class="container margin-b">
     <div class="row">
         <div class="col-md-12">

@@ -32,7 +32,7 @@
 
 <body>
 <header>
-    <?php if (!is_page('contact') ):?>
+    <?php if (!is_page('contact') &&(!is_single()) ):?>
         <nav class="navbar navbar-default transparent " role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
