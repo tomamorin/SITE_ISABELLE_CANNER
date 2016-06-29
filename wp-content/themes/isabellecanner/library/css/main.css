@@ -643,11 +643,53 @@ h4.enne {
 }
 
 .transition-enne {
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 1.5em;
     background-color: #F1B910;
-    padding-top: 40px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     color: white;
+}
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.sameheight {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.transition-enne a{
+    color: white;
+}
+.evenement{
+    border-right:1px solid white ;
+    height: 100%;
+}
+.title-evenement{
+    margin-top: 0.8em;
+}
+.title-evenement::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 0.5vh;
+    background: white;
+}
+.evenement:hover .title-evenement::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 0.5vh;
+    background: white;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -ms-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+.center{
+    float: none;
+    display: block;
+    margin: auto;
 }
 .transition-enneins{
     margin-top: 50px;
@@ -676,15 +718,13 @@ h4.enne {
 }
 
 .btn-inscription {
-    border: 2px solid white;
+    float: right;
+    background-color: transparent;
+    border: 1px solid white;
     color: white;
     border-radius: 3px;
-    width: 350px;
-    height: 60px;
-    margin: auto;
-    font-size: 22px;
-    padding-top: 12px;
-    margin-top: 40px;
+    font-size: 1em;
+   padding: 0.2em;
 }
 
 .btn-inscription:hover {

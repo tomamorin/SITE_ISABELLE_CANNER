@@ -53,12 +53,26 @@
 </div>
 <div class="container-fluid no-padding">
     <div class="col-md-12 transition-enne">
-        <?php $my_query = new WP_Query(array('post_type' => 'inscription', 'posts_per_page' => '-1')); ?>
-        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-            <a href="<?php the_permalink()?>"><?php the_title(); ?></a>
-            <?php the_content(); ?>
-            <?php the_field('date')?>
-        <?php endwhile; ?>
+        <div class="row match-my-cols">
+            <?php $my_query = new WP_Query(array('post_type' => 'inscription', 'posts_per_page' => '-1','meta_key'	=> 'date',
+                'orderby'	=> 'meta_value_num',
+                'order'		=> 'ASC')); ?>
+            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+                <div class="col-md-3 col-sm-6 col-xs-6 evenement sameheight">
+                    <a href="<?php the_permalink()?>">
+                        <h2 class="title-evenement"><?php the_title(); ?> <?php the_field('date') ?></h2>
+                        <br>
+                        <?php the_field('lieux')?>
+                        <?php the_content(); ?>
+                        <?php the_content(); ?><br>
+                        <a href="<?php the_permalink()?>"><button class="btn-inscription btn raised">Inscription</button></a>
+                    </a>
+                </div>
+
+            <?php endwhile; ?>
+        </div>
+
     </div>
 </div>
 
