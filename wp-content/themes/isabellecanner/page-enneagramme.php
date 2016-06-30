@@ -51,6 +51,13 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Stages</h3>
+        </div>
+    </div>
+</div>
 <div class="container-fluid no-padding">
     <div class="col-md-12 transition-enne">
         <div class="row match-my-cols">
@@ -63,7 +70,8 @@
                     <a href="<?php the_permalink()?>">
                         <h2 class="title-evenement"><?php the_title(); ?> <?php the_field('date') ?></h2>
                         <br>
-                        <?php the_field('lieux')?>
+                       <h5><?php the_field('lieux')?></h5>
+                        <h5><?php the_field('adresse')?></h5>
                         <?php the_content(); ?>
                         <?php the_content(); ?><br>
                         <a href="<?php the_permalink()?>"><button class="btn-inscription btn raised">Inscription</button></a>
